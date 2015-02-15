@@ -26,10 +26,10 @@ class RomanNumerals
 
     	$roman = '';
 
-    	foreach (static::$lookup as $limit => $value) {
-    		while ($number >= $limit) {
+    	foreach (static::$lookup as $key => $value) {
+    		while ($number >= $key) {
     			$roman .= $value;
-    			$number -= $limit;
+    			$number -= $key;
     		}
     	}
 

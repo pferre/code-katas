@@ -24,16 +24,16 @@ class RomanNumerals
     {
     	$this->checkForValidNumber($number);
 
-    	$roman = '';
+    	$romanNumeral = '';
 
     	foreach (static::$lookup as $key => $value) {
     		while ($number >= $key) {
-    			$roman .= $value;
+    			$romanNumeral .= $value;
     			$number -= $key;
     		}
     	}
 
-    	return $roman;
+    	return $romanNumeral;
     }
 
     /**

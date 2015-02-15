@@ -5,6 +5,8 @@ namespace Craftwb;
 class RomanNumerals
 {
 	protected static $lookup = [
+		900	=>	'CM',
+		890	=>	'DCCCXC',
 		100	=>	'C',
 		99	=>	'XCIX',
 		50	=> 	'L',

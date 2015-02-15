@@ -67,6 +67,16 @@ class RomanNumeralsSpec extends ObjectBehavior
 		$this->romanNumeralFor(100)->shouldReturn('C');
 	}
 
+	function it_returns_CM_for_900()
+	{
+		$this->romanNumeralFor(900)->shouldReturn('CM');
+	}
+
+	function it_returns_DCCCXC_for_890()
+	{
+		$this->romanNumeralFor(890)->shouldReturn('DCCCXC');
+	}
+
 
 
 }

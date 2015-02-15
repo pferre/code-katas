@@ -5,13 +5,13 @@ namespace Craftwb;
 class PrimeFactors
 {
 
-    public function factorsOf($integer)
+    public function factorsOf($number)
     {
     	$primes = [];
 
-    	for ($divisor = 2; $integer > 1; $divisor++) 
+    	for ($divisor = 2; $number > 1; $divisor++) 
     	{
-	    	for (;$integer % $divisor == 0; $integer /= $divisor) 
+	    	for (;$number % $divisor == 0; $number /= $divisor) 
 	    	{
 	    		$primes[] = $divisor;
 	    	}
